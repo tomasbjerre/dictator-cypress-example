@@ -1,36 +1,42 @@
-# Haffaz Example
+# Cypress Dictator Example
 
-An example usage of [Haffaz](https://github.com/tomasbjerre/dictator-haffaz).
+An example usage of [Cypress Dictator](https://github.com/tomasbjerre/dictator-cypress).
+
+This example will download the `dictator-cypress` package published in `registry.npm.org` which contains fake `cypress.zip`. You will need to publish your own package with not fake zip-files.
 
 Try it by running:
 
 ```bash
 $ npm install
 
-> dictator-haffaz-example@0.0.1 prepare /home/bjerre/workspace/dictator/dictator-haffaz-example
-> npx haffaz@0.0.2
+> dictator-cypress-example@0.0.1 prepare /home/bjerre/workspace/dictator/dictator-cypress-example
+> npx dictator-cypress@0.0.9
 
-npx: installed 24 in 18.061s
-  _                __    __               
- | |__     __ _   / _|  / _|   __ _   ____
- | '_ \   / _` | | |_  | |_   / _` | |_  /
- | | | | | (_| | |  _| |  _| | (_| |  / / 
- |_| |_|  \__,_| |_|   |_|    \__,_| /___|
-                                          
-  Built with dictator-builder@0.0.5.
+      _   _          _             _                                                                           
+   __| | (_)   ___  | |_    __ _  | |_    ___    _ __            ___   _   _   _ __    _ __    ___   ___   ___ 
+  / _` | | |  / __| | __|  / _` | | __|  / _ \  | '__|  _____   / __| | | | | | '_ \  | '__|  / _ \ / __| / __|
+ | (_| | | | | (__  | |_  | (_| | | |_  | (_) | | |    |_____| | (__  | |_| | | |_) | | |    |  __/ \__ \ \__ \
+  \__,_| |_|  \___|  \__|  \__,_|  \__|  \___/  |_|             \___|  \__, | | .__/  |_|     \___| |___/ |___/
+                                                                       |___/  |_|                              
+  Built with dictator-builder@0.0.14.
   https://github.com/tomasbjerre/dictator-builder
 
-Found 3 dictatables:
-
- [ 'commitlint', 'linting', 'mix' ]
-
-Applying: copy pre-commit-hook.txt to .git/hooks/pre-commit
-Applying: copy gitmessage.txt to .gitmessage
-npm notice created a lockfile as package-lock.json. You should commit this file.
-npm WARN dictator-haffaz-example@0.0.1 No repository field.
-npm WARN dictator-haffaz-example@0.0.1 No license field.
-
-up to date in 18.347s
+Copy linux cypress to cypress.zip
+    Up to date: copy linux-x64.zip to cypress.zip
+.npmrc should have reference to cypress binary
+    Up to date: .npmrc should have lines
+.gitignore should include the copied zip
+    Up to date: .gitignore should have lines
 ```
 
-Notice: `Applying: ....`. The Haffaz dictator dictates what this repository should look like. So that this code does not need to be duplicated in all repositories!
+
+```bash
+$ ls
+cypress.zip  package.json  package-lock.json  README.md
+```
+
+
+```bash
+$ cat .npmrc 
+CYPRESS_INSTALL_BINARY=cypress.zip
+```

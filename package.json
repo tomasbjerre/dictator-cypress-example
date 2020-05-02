@@ -1,8 +1,13 @@
 {
-  "name": "dictator-haffaz-example",
+  "name": "dictator-cypress-example",
   "version": "0.0.1",
   "description": "Just example",
   "scripts": {
-    "prepare": "npx haffaz@0.0.14"
+    "preinstall": "npx dictator-cypress@0.0.15",
+    "cypress-install": "cypress install",
+    "cypress-open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^4.5.0"
   }
 }
