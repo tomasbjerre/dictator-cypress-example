@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Just example",
   "scripts": {
-    "preinstall": "npx dictator-cypress@0.0.15",
+    "preinstall": "npx dictator-cypress@0.0.16",
     "cypress-install": "cypress install",
     "cypress-open": "cypress open"
   },
