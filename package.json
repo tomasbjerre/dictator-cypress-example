@@ -2,12 +2,21 @@
   "name": "dictator-cypress-example",
   "version": "0.0.1",
   "description": "Just example",
+  "homepage": "https://github.com/tomasbjerre/dictator-cypress-example",
+  "repository": "git@github.com:tomasbjerre/dictator-cypress-example.git",
   "scripts": {
     "preinstall": "npx dictator-cypress@0.0.16",
     "cypress-install": "cypress install",
-    "cypress-open": "cypress open"
+    "cypress-open": "cypress open",
+    "release": "npm version patch && npm run test && npm publish && git push --follow-tags"
   },
   "devDependencies": {
     "cypress": "^4.5.0"
-  }
+  },
+  "author": "Tomas Bjerre",
+  "keywords": [
+    "dictator",
+    "cypress"
+  ],
+  "license": "Apache 2"
 }
