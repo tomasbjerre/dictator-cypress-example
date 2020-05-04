@@ -5,7 +5,7 @@
   "homepage": "https://github.com/tomasbjerre/dictator-cypress-example",
   "repository": "git@github.com:tomasbjerre/dictator-cypress-example.git",
   "scripts": {
-    "preinstall": "npx dictator-cypress@0.0.17",
+    "preinstall": "npx dictator-cypress@0.0.19",
     "cypress-install": "cypress install",
     "cypress-open": "cypress open",
     "release": "npm version patch && npm run test && npm publish && git push --follow-tags"
