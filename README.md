@@ -1,5 +1,7 @@
 # Cypress Dictator Example
 
+[![Build Status](https://travis-ci.org/tomasbjerre/dictator-cypress-example.svg?branch=master)](https://travis-ci.org/tomasbjerre/dictator-cypress-example)
+
 An example usage of [Cypress Dictator](https://github.com/tomasbjerre/dictator-cypress).
 
 This example will download the `dictator-cypress` package published in `registry.npm.org` which contains fake `cypress.zip`. You will need to publish your own package with not fake zip-files.
